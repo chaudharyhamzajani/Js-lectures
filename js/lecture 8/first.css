@@ -1,0 +1,25 @@
+/* *{
+    background-color: black;
+    color: white;
+} */
+/* button{
+    background-color: royalblue;
+    border: 2px solid black;
+} */
+/* .first{
+    height: 100px;
+    width: 100px;
+    background-color: royalblue;
+    border: 2px solid black;
+} */
+/* .task1{
+    background-color: white;
+} */
+.dark{
+    background-color: black;
+    color: white;
+}
+.light{
+    background-color: white;
+    color: black;
+}

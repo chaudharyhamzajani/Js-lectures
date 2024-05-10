@@ -1,0 +1,13 @@
+*{
+    background-color: black;
+    color: white;
+}
+.heading{
+    background-color: yellow;
+}
+                       /* for task 2 */
+.box{
+    height: 100px;
+    width: 100px;
+    border: 2px solid red;
+}
