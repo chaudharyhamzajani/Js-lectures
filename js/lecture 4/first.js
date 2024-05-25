@@ -61,10 +61,16 @@
 // let deleteditem = fooditem.pop();
 // console.log(fooditem);
 // console.log("deleted", deleteditem);
-          // //toString()
+//           //toString()
 // let marks = [10 ,20 , 30 , 40 ];
 // console.log(marks);
 // console.log(marks.toString());
+// console.log(typeof marks);
+//           //join()
+// let mark = [10 ,20 , 30 , 40 ];                
+// console.log(mark);
+// console.log(mark.join('-'));                 //its change the value form array to string
+// console.log(typeof mark);
 //           //include()
 // let marks = [10 ,20 , 30 , 40 ];                //this value exist or not
 // console.log(marks);
@@ -73,12 +79,7 @@
 // let marks = [10 ,20 , 30 , 40 ];                
 // console.log(marks);
 // console.log(marks.indexOf(12));                 //if value exist it's print its index otherwise its print -1
-// console.log(marks.indexOf(30));
-//           //join()
-// let marks = [10 ,20 , 30 , 40 ];                
-// console.log(marks);
-// console.log(marks.join());                 //its change the value form array to string
-// console.log(typeof marks);
+// console.log(marks.indexOf(30)); 
 //           //flat()
 // let marks = [10 ,20 , 30 , 40 , [1 , 2 , [3 , 4]]];                
 // console.log(marks);
@@ -114,6 +115,10 @@
 // console.log(myEntery);
 // console.log(myEntery.slice(1 ,4));
 // console.log(myEntery);
+//             //reverse()
+// let myEntery = ["hamza", "zubair","saif","tanveer", "faisal","iqrar" ];
+// console.log(myEntery);
+// console.log(myEntery.reverse());
             //splice()
 // let myEntery = ["hamza", "zubair","saif","tanveer", "faisal","iqrar" ];
 // console.log(myEntery);                             
@@ -136,23 +141,94 @@
 // console.log(companies.splice(5,0,"Amazon"));
 // console.log(companies);
 
-                                           //***********objects***********
-   let mysym = Symbol("key01")
-let jsuser = {
-        name : "hamza",
-        age  : 20, 
-        email : "www.google.co",
-        isfollow : true,
-        [mysym] : "key01",
-        "full name" : " name"
-   };
-   console.log(jsuser.age);
-   console.log(jsuser["age"]);
-   console.log(jsuser["full name"]);
-   console.log(jsuser[mysym]);
+//                                            //***********objects***********
+//    let mysym = Symbol("key01")
+// let jsuser = {
+//         name : "hamza",
+//         age  : 20, 
+//         email : "www.google.co",
+//         isfollow : true,
+//         [mysym] : "key01",
+//         "full name" : " name"
+//    };
+// //    console.log(jsuser.age);
+// //    console.log(jsuser["age"]);
+// //    console.log(jsuser["full name"]);
+// //    console.log(jsuser[mysym]);
   
-   jsuser.age = 12
-   console.log(jsuser);
-   Object.freeze(jsuser);
-   jsuser.age = 15
-   console.log(jsuser);
+//    jsuser.age = 12
+//    console.log(jsuser);
+// //    Object.freeze(jsuser);                  //this is use for when we can't update anything in the object
+//    jsuser.age = 15
+//    console.log(jsuser);
+//    jsuser.greetingOne = function (){
+//      console.log(`hello Js users ${this.name}`);  
+//    };
+//    console.log(jsuser.greetingOne());
+
+                                      //***********************************************
+// const tinderUser = new Object()         //single tinder
+// const tinderUser = {}
+// tinderUser.id = "www.google.com"
+// tinderUser.pass = "abcd"
+// tinderUser.isloggin = false
+
+
+// console.log(tinderUser);
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
+// console.log(tinderUser.hasOwnProperty('isloggin'));                    //to check that object has the key
+// const regularUser = {
+//         fullname : {
+//                 userFullName:{
+//                         name : "hamza",
+//                         email : "abcd123"
+//                 }
+//         }
+// }
+
+// console.log(regularUser.fullname.userFullName);
+               //adding two objects
+// const obj1 = {'1': 'a' , '2' : 'b'}
+// const obj2 = {'3': 'a' , '4' : 'b'}
+// // const obj3 = console.log(Object.assign( obj1 , obj2));
+// const obj3 = {...obj1 , ...obj2}                                         //...this is called seprate operator
+// console.log(obj3);
+
+
+// const users = [
+//         {
+//                 id : 1,
+//                 email : "hamzaabal"
+//         },
+//         {
+//                 id : 1,
+//                 email : "hamzaabal"
+//         },
+//         {
+//                 id : 1,
+//                 email : "hamzaabal"
+//         }
+// ]
+// console.log(users[1].email);
+
+const course = {
+        course : "office course",
+        prise : "1000",
+        instructorCourse : "hamza"
+}
+// const {instructorCourse  } = course             //how to object destructor
+// console.log(instructorCourse);
+
+const {instructorCourse : instructor } = course             //how to destructor an object
+console.log(instructor);
+                              // this is use in React Js how to destructor an object
+const navbar = ({company}) => {
+
+}
+console.log(company = "hamza");
+
+
+
+
